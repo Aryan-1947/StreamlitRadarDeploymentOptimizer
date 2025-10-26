@@ -1,0 +1,19 @@
+/* streamlit.css */
+
+/* Hide the default footer content (GitHub attribution) */
+footer {
+    visibility: hidden;
+}
+
+/* Add custom footer with our attribution and the original attribution */
+footer::before {
+    content: "Developed by Muskan Bajetha and Aryan Shekhawat";
+    visibility: visible;
+    display: block;
+    font-size: 14px;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+}

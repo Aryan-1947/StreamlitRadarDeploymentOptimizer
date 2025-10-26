@@ -10,7 +10,9 @@ from terrain_analysis import calculate_slope, mask_invalid_terrain
 from radar_simulation import get_radar_coverage
 from radar_optimization import RadarOptimizer
 from user_input import compute_radar_range
-
+# Load custom CSS
+with open("streamlit.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 st.set_page_config(page_title="Optimal Radar Deployment", layout="centered")
 
 st.title("📡 Optimal Radar Deployment Web App")
